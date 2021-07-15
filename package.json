@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "基于viewerjs开发的vue图片预览组件",
   "author": "tangyunfei <451202165@qq.com>",
-  "homepage": "",
+  "keywords": ["viewerjs","picture preview","vue"],
   "license": "ISC",
   "main": "lib/v-viewer.js",
   "publishConfig": {
@@ -22,6 +22,10 @@
     "dist",
     "LICENSE"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CXLDILEI/v-viewer.git"
+  },
   "scripts": {
     "build": "webpack-cli -c ./webpack.config.js --progress --color --mode none",
     "dev": "webpack-cli -c ./webpack.config.js --progress --color --watch --mode none",
