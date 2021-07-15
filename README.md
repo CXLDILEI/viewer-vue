@@ -5,12 +5,12 @@
 ## Usage
 
 ```
-improt VViewer from 'v-viewer'
+improt ViewerVue from 'viewer-vue'
 ```
 
 
 ```
-<viewer ref="viewer" :options="options" :images="images" @inited="inited" @hidden="hidden">
+<viewer-vue ref="viewer" :options="options" :images="images" @inited="inited" @hidden="hidden">
     <img
       v-for="item in images"
       :key="item.url"
@@ -18,7 +18,7 @@ improt VViewer from 'v-viewer'
       :src="item.url"
       :alt="item.fileName"
     />
-</viewer>
+</viewer-vue>
 
 private $viewer: any = null
 private inited(viewer) {

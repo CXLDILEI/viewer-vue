@@ -10,8 +10,8 @@ module.exports = {
   entry: './src/Index.vue',
   output: {
     path: path.resolve(__dirname, 'lib'),
-    filename: 'v-viewer.js',
-    library: 'v-viewer',
+    filename: 'viewer-vue.js',
+    library: 'viewer-vue',
     libraryTarget: 'umd',
     libraryExport: 'default',
     umdNamedDefine: true,
