@@ -1,4 +1,4 @@
-# `v-viewer`
+# `viewer-vue`
 
 > 基于viewerjs开发的vue图片预览组件
 
