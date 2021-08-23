@@ -24,9 +24,9 @@ const TOOLBAR_OPTIONS = {
 }
 
 @Component({
-  name: 'ImageViewer',
+  name: 'ViewerVue',
 })
-export default class ImageViewer extends Vue {
+export default class ViewerVue extends Vue {
   @Ref('viewer') public viewerBox!: HTMLElement
   // 设置属性
   @Prop({ type: Object }) private options: Viewer.Options | undefined

@@ -7,7 +7,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   mode: 'none',
-  entry: './src/Index.vue',
+  entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, 'lib'),
     filename: 'viewer-vue.js',

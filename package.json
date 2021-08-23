@@ -6,6 +6,7 @@
   "keywords": ["viewerjs","picture preview","vue"],
   "license": "ISC",
   "main": "lib/viewer-vue.js",
+  "types": "lib/types/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
