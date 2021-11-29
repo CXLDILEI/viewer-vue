@@ -1,9 +1,13 @@
 {
   "name": "viewer-vue",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "基于viewerjs开发的vue图片预览组件",
   "author": "tangyunfei <451202165@qq.com>",
-  "keywords": ["viewerjs","picture preview","vue"],
+  "keywords": [
+    "viewerjs",
+    "picture preview",
+    "vue"
+  ],
   "license": "ISC",
   "main": "lib/viewer-vue.js",
   "types": "lib/types/index.d.ts",
