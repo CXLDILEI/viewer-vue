@@ -6,7 +6,7 @@
   </div>
 </template>
 <script lang="ts">
-import { Vue, Component, Ref, Prop, Watch } from 'vue-property-decorator'
+import { Vue, Component, Prop, Watch } from 'vue-property-decorator'
 import Viewer from 'viewerjs'
 
 const TOOLBAR_OPTIONS = {
@@ -26,8 +26,7 @@ const TOOLBAR_OPTIONS = {
 @Component({
   name: 'ViewerVue',
 })
-export default class ViewerVue extends Vue {
-  @Ref('viewer') public viewerBox!: HTMLElement
+export default class ImageViewer extends Vue {
   // 设置属性
   @Prop({ type: Object }) private options: Viewer.Options | undefined
   // 显示图片
@@ -104,7 +103,7 @@ export default class ViewerVue extends Vue {
       },
       this.options,
     )
-    this.viewer = new Viewer(this.viewerBox, options)
+    this.viewer = new Viewer(this.$refs.viewer as HTMLElement, options)
     this.$emit('inited', this.viewer)
     if (this.visible) {
       this.viewer.show()
